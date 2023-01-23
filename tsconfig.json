@@ -1,0 +1,40 @@
+// Option values based on https://github.com/tsconfig/bases#node-16--esm--strictest-tsconfigjson
+{
+  // Options Reference https://www.typescriptlang.org/tsconfig
+  "compilerOptions": {
+    // lang & env
+    "target": "ES2022",
+    "lib": ["ES2022"],
+
+    // modules
+    "module": "ES2022",
+    "moduleResolution": "NodeNext",
+
+    // type checking
+    "strict": true,
+    "noImplicitAny": false,
+    "exactOptionalPropertyTypes": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": true,
+
+    // completeness
+    "skipLibCheck": true,
+
+    // interop
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+
+    // Emit
+    "importHelpers": true,
+    "sourceMap": true,
+    //"rootDir": ".",
+    "outDir": ".build",
+  },
+  "include": ["src/**/*"]
+}
