@@ -1,5 +1,5 @@
 {
-  "name": "ts-node-playground",
+  "name": "node-playground",
   "version": "1.0.0",
   "description": "",
   "type": "module",
@@ -8,8 +8,12 @@
   },
   "scripts": {
     "cli": "npm run build && node ./.build/index.js",
-    "build": "tsc",
+    "build": "npm run clean && tsc",
     "clean": "rimraf .build .coverage",
+    "typecheck": "tsc --noemit",
+    "typecheck:w": "tsc --noemit --watch",
+    "tc": "npm run typecheck",
+    "tc:w": "npm run typecheck:w",
     "test": "jest",
     "test:w": "jest --watch",
     "freshstart": "rimraf .git && git init"
