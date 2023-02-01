@@ -14,6 +14,7 @@
     "typecheck:w": "tsc --noemit --watch",
     "tc": "npm run typecheck",
     "tc:w": "npm run typecheck:w",
+    "lint": "eslint src",
     "test": "jest",
     "test:w": "jest --watch",
     "freshstart": "rimraf .git && git init"
