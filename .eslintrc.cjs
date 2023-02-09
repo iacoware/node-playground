@@ -16,5 +16,8 @@ module.exports = {
     // ecmaVersion: 2021,
   },
   plugins: ["@typescript-eslint"],
-  rules: {},
+  rules: {
+    "no-empty-function": 0,
+    "@typescript-eslint/no-empty-function": 0
+  },
 };
