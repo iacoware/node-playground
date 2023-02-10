@@ -1,15 +1,13 @@
-export default {
+module.exports = {
     injectGlobals: false,
     testEnvironment: "node",
     // preset: "ts-jest/presets/default-esm",
-    // extensionsToTreatAsEsm: [".ts"],
     rootDir: "src",
     moduleNameMapper: {
         // necessary to make ESM modules work
         "^(\\.{1,2}/.*)\\.js$": "$1",
     },
     transform: {
-        // "^.+\\.m?[tj]s?$": ["ts-jest", { useESM: true }],
         "^.+\\.m?[tj]s?$": ["@swc/jest"],
     },
     coverageDirectory: "../.coverage",

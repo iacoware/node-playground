@@ -1,4 +1,4 @@
-import { delay } from "./helpers.js"
+import { delay } from "./helpers"
 
 const hello = (who: string) => `Hello ${who}!`
 
@@ -8,4 +8,4 @@ const greet = async () => {
     console.log(`${message} after ${result}ms`)
 }
 
-await greet()
+greet()
