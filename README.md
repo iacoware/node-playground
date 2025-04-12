@@ -7,7 +7,7 @@
 - Prettier
 - Jest
 
-### Commands available through `npm run`
+### Commands available through `pnpm run`
 - `cli`: compile and run index.ts
 - `freshstart`: remove .git folder to clean up the git history
 - The usual `test`, `test:w`
