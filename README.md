@@ -1,7 +1,8 @@
 ### Node + Typescript template repository
 
 ### Already setup
-- Node + Typescript
+- Node 22+, ESM
+- Typescript in strict mode
 - ESLint
 - Prettier
 - Vitest

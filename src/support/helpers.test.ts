@@ -1,5 +1,5 @@
 import { expect, test } from "vitest"
-import { delay } from "./helpers"
+import { delay } from "./helpers.ts"
 
 test("it works", async () => {
     await delay(100)

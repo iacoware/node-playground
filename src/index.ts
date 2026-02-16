@@ -1,4 +1,4 @@
-import { delay, green, yellow } from "./support/helpers"
+import { delay, green, yellow } from "./support/helpers.ts"
 
 const hello = (who: string) => `Hello ${who}!`
 

@@ -3,3 +3,8 @@ node_modules
 .coverage
 .idea
 .vscode
+
+tsconfig.tsbuildinfo
+
+.claude
+!.claude/CLAUDE.md

@@ -1,40 +1,51 @@
-// Option values based on https://github.com/tsconfig/bases#node-16--esm--strictest-tsconfigjson
+// First based on: https://github.com/tsconfig/bases (strictest)
+// Update with values from: https://www.effect.solutions/tsconfig
 {
-  // Options Reference https://www.typescriptlang.org/tsconfig
-  "compilerOptions": {
-    // lang & env
-    "target": "ES2021",
-    "lib": ["ES2021"],
+    // Options Reference https://www.typescriptlang.org/tsconfig
+    "compilerOptions": {
+        // lang & env
+        "target": "ES2022",
+        "composite": true,
 
-    // modules
-    "module": "commonjs",
-    "moduleResolution": "node",
+        // modules
+        "module": "NodeNext",
+        "moduleDetection": "force",
 
-    // type checking
-    "strict": true,
-    "noImplicitAny": false,
-    "exactOptionalPropertyTypes": true,
-    "noImplicitOverride": true,
-    "noPropertyAccessFromIndexSignature": true,
-    "noUncheckedIndexedAccess": true,
-    "noFallthroughCasesInSwitch": true,
-    "noImplicitReturns": true,
-    "noUnusedLocals": false,
-    "noUnusedParameters": false,
+        // import handling
+        "verbatimModuleSyntax": true,
 
-    // completeness
-    "skipLibCheck": true,
+        // typescript
+        "rewriteRelativeImportExtensions": true,
+        "erasableSyntaxOnly": true,
 
-    // interop
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "forceConsistentCasingInFileNames": true,
+        // development experience
+        "declarationMap": true,
+        "sourceMap": true,
+        "skipLibCheck": true,
 
-    // Emit
-    "importHelpers": true,
-    "sourceMap": true,
-    "rootDir": "src",
-    "outDir": ".build",
-  },
-  "include": ["src/**/*"]
+        // type checking
+        "strict": true,
+        "noImplicitAny": false,
+        "exactOptionalPropertyTypes": true,
+        "noPropertyAccessFromIndexSignature": true,
+        "noUncheckedIndexedAccess": true,
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitOverride": true,
+        "noImplicitReturns": true,
+        "noUnusedLocals": false,
+        "noUnusedParameters": false,
+
+        // interop
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "forceConsistentCasingInFileNames": true,
+
+        // Emit
+        "importHelpers": true,
+        "rootDir": "src",
+        "outDir": ".build",
+
+        "plugins": []
+    },
+    "include": ["src/**/*"]
 }
