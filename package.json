@@ -3,6 +3,9 @@
     "version": "1.0.0",
     "type": "module",
     "description": "",
+    "repository": {
+        "url": "https://github.com/iacoware/node-playground"
+    },
     "engines": {
         "node": ">=22"
     },
