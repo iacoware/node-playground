@@ -7,7 +7,7 @@
         "url": "https://github.com/iacoware/node-playground"
     },
     "engines": {
-        "node": ">=22"
+        "node": ">=22.18"
     },
     "scripts": {
         "cli": "node ./src/index.ts",
@@ -18,7 +18,9 @@
         "tc": "npm run typecheck",
         "tc:w": "npm run typecheck:w",
         "lint": "eslint src",
-        "test": "vitest",
+        "test": "vitest --run",
+        "test:w": "vitest",
+        "check": "npm run lint && npm run typecheck && npm run test",
         "freshstart": "rimraf .git && git init && git add -A && git commit -m 'Initial commit'"
     },
     "devDependencies": {

@@ -5,8 +5,8 @@ import typescriptEslint from "typescript-eslint"
 export default [
     js.configs.recommended,
     eslintConfigPrettier,
-    ...typescriptEslint.configs.recommended,
-    /*...typescriptEslint.configs.recommendedTypeChecked,
+    // ...typescriptEslint.configs.recommended,
+    ...typescriptEslint.configs.recommendedTypeChecked,
     {
         languageOptions: {
             parserOptions: {
@@ -14,7 +14,7 @@ export default [
                 tsconfigRootDir: import.meta.dirname,
             },
         },
-    },*/
+    },
     {
         ignores: ["**/node_modules", "**/.eslint.config.mjs"],
     },
