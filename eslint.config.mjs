@@ -1,12 +1,10 @@
-import js from "@eslint/js"
 import eslintConfigPrettier from "eslint-config-prettier"
 import typescriptEslint from "typescript-eslint"
 
 export default [
-    js.configs.recommended,
     eslintConfigPrettier,
-    // ...typescriptEslint.configs.recommended,
     ...typescriptEslint.configs.recommendedTypeChecked,
+    ...typescriptEslint.configs.stylisticTypeChecked,
     {
         languageOptions: {
             parserOptions: {
@@ -22,11 +20,6 @@ export default [
         rules: {
             "no-empty-function": 0,
             "@typescript-eslint/no-empty-function": 0,
-            /*"@typescript-eslint/no-floating-promises": [
-                "error", { ignoreIIFE: true },
-            ],
-            "@typescript-eslint/no-misused-promises": "error",
-            "@typescript-eslint/require-await": "error",*/
         },
     },
 ]
